@@ -56,3 +56,19 @@ INSERT INTO tb_product_category (product_id, category_id) VALUES (22, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (23, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (24, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (25, 3);
+
+
+INSERT INTO tb_users (name, email, password) VALUES ('Maria Brown', 'maria@gmail.com', '123456');
+INSERT INTO tb_users (name, email, password) VALUES ('Alex Green', 'alex@gmail.com', '123456');
+INSERT INTO tb_users (name, email, password) VALUES ('Bob Blue', 'bob@gmail.com', '123456');
+INSERT INTO tb_users (name, email, password) VALUES ('Anna White', 'anna@gmail.com', '123456');
+INSERT INTO tb_users (name, email, password) VALUES ('John Grey', 'john@gmail.com', '123456');
+
+INSERT INTO tb_profiles (bio, url_avatar, data_nascimento, user_id) 
+VALUES ('Apaixonada por Java e Spring Boot.', 'https://img.com/maria.jpg', '1990-07-20T10:30:00Z', 1);
+INSERT INTO tb_profiles (bio, url_avatar, data_nascimento, user_id) 
+VALUES ('Instrutor de React e amante de gatos.', 'https://img.com/alex.jpg', '1985-02-15T14:00:00Z', 2);
+INSERT INTO tb_profiles (bio, url_avatar, data_nascimento, user_id) 
+VALUES ('Gamer hardcore e streamer.', 'https://img.com/bob.jpg', '2000-11-05T18:00:00Z', 3);
+INSERT INTO tb_profiles (bio, url_avatar, data_nascimento, user_id) 
+VALUES ('Fotógrafa e Designer UX/UI.', 'https://img.com/anna.jpg', '1995-05-12T09:00:00Z', 4);

@@ -69,7 +69,7 @@ public class ProductService {
 			entity = repository.save(entity);
 			return new ProductDTO(entity);
 		}catch(EntityNotFoundException e) {
-			throw new EntityNotFoundException("Id not Found: " + id);
+			throw new ResourceNotFoundException("Id not Found: " + id);
 		}
 	}
 
@@ -80,7 +80,7 @@ public class ProductService {
 			}
 			repository.deleteById(id);
 		}catch(EntityNotFoundException e) {
-			throw new EntityNotFoundException("Id not Found: " + id);
+			throw new ResourceNotFoundException("Id not Found: " + id);
 		}
 	}
 	
